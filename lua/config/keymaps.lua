@@ -3,3 +3,7 @@
 -- Add any additional keymaps here
 -- Switch to normal mode with JK
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true })
+
+-- override find files
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader><space>", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true })

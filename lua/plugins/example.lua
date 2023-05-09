@@ -1,6 +1,6 @@
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
-if true then return {} end
+-- if true then return {} end
 
 -- every spec file under config.plugins will be loaded automatically by lazy.nvim
 --
@@ -50,40 +50,40 @@ return {
   },
 
   -- change some telescope options and a keymap to browse plugin files
-  {
-    "nvim-telescope/telescope.nvim",
-    keys = {
-      -- add a keymap to browse plugin files
-      -- stylua: ignore
-      {
-        "<leader>fp",
-        function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
-        desc = "Find Plugin File",
-      },
-    },
-    -- change some options
-    opts = {
-      defaults = {
-        layout_strategy = "horizontal",
-        layout_config = { prompt_position = "top" },
-        sorting_strategy = "ascending",
-        winblend = 0,
-      },
-    },
-  },
-
-  -- add telescope-fzf-native
-  {
-    "telescope.nvim",
-    dependencies = {
-      "nvim-telescope/telescope-fzf-native.nvim",
-      build = "make",
-      config = function()
-        require("telescope").load_extension("fzf")
-      end,
-    },
-  },
-
+  -- {
+  --   "nvim-telescope/telescope.nvim",
+  --   keys = {
+  --     -- add a keymap to browse plugin files
+  --     -- stylua: ignore
+  --     {
+  --       "<leader>fp",
+  --       function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
+  --       desc = "Find Plugin File",
+  --     },
+  --   },
+  --   -- change some options
+  --   opts = {
+  --     defaults = {
+  --       layout_strategy = "horizontal",
+  --       layout_config = { prompt_position = "top" },
+  --       sorting_strategy = "ascending",
+  --       winblend = 0,
+  --     },
+  --   },
+  -- },
+  --
+  -- -- add telescope-fzf-native
+  -- {
+  --   "telescope.nvim",
+  --   dependencies = {
+  --     "nvim-telescope/telescope-fzf-native.nvim",
+  --     build = "make",
+  --     config = function()
+  --       require("telescope").load_extension("fzf")
+  --     end,
+  --   },
+  -- },
+  --
   -- add pyright to lspconfig
   {
     "neovim/nvim-lspconfig",
@@ -93,6 +93,7 @@ return {
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
+        clangd = {},
       },
     },
   },
@@ -194,7 +195,7 @@ return {
   },
 
   -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
+  -- { import = "lazyvim.plugins.extras.ui.mini-starter" },
 
   -- add jsonls and schemastore ans setup treesitter for json, json5 and jsonc
   { import = "lazyvim.plugins.extras.lang.json" },
@@ -207,7 +208,8 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "flake8",
+        "clangd",
+        -- "flake8",
       },
     },
   },
