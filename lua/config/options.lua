@@ -3,3 +3,4 @@
 -- Add any additional options here
 local opt = vim.opt
 opt.wrap = true
+vim.g.leetcode_browser = "firefox"
