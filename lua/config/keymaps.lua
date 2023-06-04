@@ -30,6 +30,13 @@ vim.keymap.set("v", "ge", "<cmd>Telescope grep_string<CR>", { noremap = true, si
 -- delete window
 vim.keymap.set("n", "<leader>ww", "<C-W>c", { desc = "Delete Window" })
 
+vim.keymap.set("n", "<leader>mc", MiniMap.close, { noremap = true, silent = true, desc = "Close map" })
+vim.keymap.set("n", "<leader>mf", MiniMap.toggle_focus, { noremap = true, silent = true, desc = "Toggle focus map" })
+vim.keymap.set("n", "<leader>mo", MiniMap.open, { noremap = true, silent = true, desc = "Open map" })
+vim.keymap.set("n", "<leader>mr", MiniMap.refresh, { noremap = true, silent = true, desc = "Refresh map" })
+vim.keymap.set("n", "<leader>ms", MiniMap.toggle_side, { noremap = true, silent = true, desc = "Toggle side map" })
+vim.keymap.set("n", "<leader>mt", MiniMap.toggle, { noremap = true, silent = true, desc = "Toggle Map" })
+
 -- Floating terminal
 vim.keymap.set("n", "<c-\\>", "<cmd>FloatermToggle<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<s-Up>", "<cmd>FloatermNew<CR>", { noremap = true, silent = true })
