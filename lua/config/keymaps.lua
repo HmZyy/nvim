@@ -56,6 +56,22 @@ vim.keymap.set("n", "<c-\\>", lazyterm, { noremap = true, silent = true })
 
 -- Comments
 vim.keymap.set("n", "<c-/>", "gcc", { remap = true, desc = "Toggle Comment" })
+vim.keymap.set("n", "<leader>Ll", "<cmd>LeetCodeList<CR>", { noremap = true, silent = true, desc = "LeetCode List" })
+vim.keymap.set("n", "<leader>Lt", "<cmd>LeetCodeTest<CR>", { noremap = true, silent = true, desc = "LeetCode Test" })
+vim.keymap.set(
+  "n",
+  "<leader>Ls",
+  "<cmd>LeetCodeSubmit<CR>",
+  { noremap = true, silent = true, desc = "LeetCode Submit" }
+)
+vim.keymap.set(
+  "n",
+  "<leader>Li",
+  "<cmd>LeetCodeSignIn<CR>",
+  { noremap = true, silent = true, desc = "LeetCode Sign in" }
+)
+
+-- LeetCode
 
 -- Remove keymaps
 vim.keymap.del("n", "<leader>`") -- <S-H> <S-L>
