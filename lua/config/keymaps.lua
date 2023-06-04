@@ -32,6 +32,14 @@ vim.keymap.set("v", "ge", "<cmd>Telescope grep_string<CR>", { noremap = true, si
 -- delete window
 vim.keymap.set("n", "<leader>ww", "<C-W>c", { desc = "Delete Window" })
 
+-- Switch between header/source files (c++)
+vim.keymap.set(
+  "n",
+  "<leader>h",
+  "<cmd>ClangdSwitchSourceHeader<CR>",
+  { noremap = true, silent = true, desc = "Switch Source/Header" }
+)
+
 -- mini map
 vim.keymap.set("n", "<leader>mc", MiniMap.close, { noremap = true, silent = true, desc = "Close map" })
 vim.keymap.set("n", "<leader>mf", MiniMap.toggle_focus, { noremap = true, silent = true, desc = "Toggle focus map" })
