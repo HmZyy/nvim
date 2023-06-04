@@ -1,6 +1,8 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+local Util = require("lazyvim.util")
+
 -- Switch to normal mode with JK
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true })
 
@@ -30,6 +32,7 @@ vim.keymap.set("v", "ge", "<cmd>Telescope grep_string<CR>", { noremap = true, si
 -- delete window
 vim.keymap.set("n", "<leader>ww", "<C-W>c", { desc = "Delete Window" })
 
+-- mini map
 vim.keymap.set("n", "<leader>mc", MiniMap.close, { noremap = true, silent = true, desc = "Close map" })
 vim.keymap.set("n", "<leader>mf", MiniMap.toggle_focus, { noremap = true, silent = true, desc = "Toggle focus map" })
 vim.keymap.set("n", "<leader>mo", MiniMap.open, { noremap = true, silent = true, desc = "Open map" })
@@ -38,10 +41,10 @@ vim.keymap.set("n", "<leader>ms", MiniMap.toggle_side, { noremap = true, silent 
 vim.keymap.set("n", "<leader>mt", MiniMap.toggle, { noremap = true, silent = true, desc = "Toggle Map" })
 
 -- Floating terminal
-vim.keymap.set("n", "<c-\\>", "<cmd>FloatermToggle<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<s-Up>", "<cmd>FloatermNew<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<s-Right>", "<cmd>FloatermNext<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<s-Left>", "<cmd>FloatermPrev<CR>", { noremap = true, silent = true })
+local lazyterm = function()
+  Util.float_term(nil, { cwd = Util.get_root() })
+end
+vim.keymap.set("n", "<c-\\>", lazyterm, { noremap = true, silent = true })
 
 -- Remove keymaps
 vim.keymap.set("n", "<leader>`", "", { desc = "Switch to Other Buffer" }) -- <S-H> <S-L>
