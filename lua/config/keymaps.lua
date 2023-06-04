@@ -46,8 +46,11 @@ local lazyterm = function()
 end
 vim.keymap.set("n", "<c-\\>", lazyterm, { noremap = true, silent = true })
 
+-- Comments
+vim.keymap.set("n", "<c-/>", "gcc", { remap = true, desc = "Toggle Comment" })
+
 -- Remove keymaps
-vim.keymap.set("n", "<leader>`", "", { desc = "Switch to Other Buffer" }) -- <S-H> <S-L>
-vim.keymap.set("n", "<leader>bd", "", { desc = "Delete Buffer" }) -- remapped to <leader>bb
-vim.keymap.set("n", "<leader>bD", "", { desc = "Delete Buffer (Force)" }) -- remapped to <leader>BB
-vim.keymap.set("n", "<leader>wd", "", { desc = "Delete Window" }) -- remapped to <leader>ww
+vim.keymap.del("n", "<leader>`") -- <S-H> <S-L>
+vim.keymap.del("n", "<leader>bd") -- remapped to <leader>bb
+vim.keymap.del("n", "<leader>bD") -- remapped to <leader>BB
+vim.keymap.del("n", "<leader>wd") -- remapped to <leader>ww
