@@ -2,7 +2,7 @@ return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
-  -- add catpuccin
+  -- add catppuccin
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -10,11 +10,11 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
+      -- transparent = true,
+      -- styles = {
+      -- sidebars = "transparent",
+      -- floats = "transparent",
+      -- },
     },
   },
 

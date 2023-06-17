@@ -71,6 +71,9 @@ vim.keymap.set(
   { noremap = true, silent = true, desc = "LeetCode Sign in" }
 )
 
+-- Flutter
+vim.keymap.set("n", "<leader>F", "<cmd>Telescope flutter commands<CR>", { noremap = true, silent = true })
+
 -- LeetCode
 
 -- Remove keymaps

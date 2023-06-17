@@ -1,6 +1,6 @@
-if true then
-  return {}
-end
+-- if true then
+--   return {}
+-- end
 
 return {
   "folke/edgy.nvim",
@@ -9,6 +9,11 @@ return {
     bottom = {
       -- toggleterm / lazyterm at the bottom with a height of 40% of the screen
       { ft = "toggleterm", size = { height = 0.4 } },
+      {
+        ft = "log",
+        title = "Log 🔍",
+        size = { height = 0.3 },
+      },
       {
         ft = "lazyterm",
         title = "LazyTerm",
@@ -20,7 +25,7 @@ return {
       "Trouble",
       { ft = "qf", title = "QuickFix" },
       { ft = "help", size = { height = 20 } },
-      { ft = "spectre_panel", size = { height = 0.4 } },
+      { ft = "spectre_panel", title = "Spectre 🔥", size = { height = 0.4 } },
     },
     left = {
       -- Neo-tree filesystem always takes half the screen height
