@@ -1,8 +1,8 @@
 local function tabnine_build_path()
   if vim.loop.os_uname().sysname == "Windows_NT" then
-    return "pwsh.exe -file C:\\Users\\hamza\\AppData\\Local\\nvim-data\\lazy\\tabnine-nvim\\dl_binaries.ps1"
+    return "pwsh.exe -file .\\dl_binaries.ps1"
   else
-    return "/home/hamza/projects/github/tabnine-nvim/dl_binaries.sh"
+    return "./dl_binaries.sh"
   end
 end
 
@@ -11,6 +11,7 @@ return {
     "codota/tabnine-nvim",
     build = tabnine_build_path(),
     config = function()
+      print(tabnine_build_path())
       require("tabnine").setup({
         disable_auto_comment = true,
         accept_keymap = "<Tab>",
