@@ -197,4 +197,5 @@ return {
   -- },
 
   { "echasnovski/mini.animate", version = false },
+  { "dstein64/nvim-scrollview" },
 }
