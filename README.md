@@ -1,13 +1,4 @@
-# VibeVim 🔥
 A NeoVim config based on [LazyVim](https://github.com/LazyVim/LazyVim)
-
-## ✨ Features
-
-- 🔥 Transform your Neovim into a full-fledged IDE
-- 💤 Easily customize and extend your config with [lazy.nvim](https://github.com/folke/lazy.nvim)
-- 🚀 Blazingly fast
-- 🧹 Sane default settings for options, autocmds, and keymaps
-- 📦 Comes with a wealth of plugins pre-configured and ready to use
 
 ## ⚡️ Requirements
 
@@ -38,7 +29,13 @@ A NeoVim config based on [LazyVim](https://github.com/LazyVim/LazyVim)
 
 - Clone the repo
   ```sh
-  git clone https://github.com/HmZyy/VibeVim ~/.config/nvim
+  git clone https://github.com/HmZyy/nvim ~/.config/nvim
+  ```
+
+  OR
+
+  ```sh
+  git clone git@github.com:HmZyy/nvim ~/.config/nvim
   ```
 
 ## Plugins Configuration
