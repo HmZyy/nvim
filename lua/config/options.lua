@@ -5,4 +5,3 @@ local opt = vim.opt
 opt.wrap = true
 opt.laststatus = 3
 opt.splitkeep = "screen"
-vim.g.leetcode_browser = "firefox"

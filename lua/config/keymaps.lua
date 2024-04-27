@@ -55,21 +55,12 @@ end
 vim.keymap.set("n", "<c-\\>", lazyterm, { noremap = true, silent = true })
 
 -- Comments
-vim.keymap.set("n", "<c-/>", "gcc", { remap = true, desc = "Toggle Comment" })
-vim.keymap.set("n", "<leader>Ll", "<cmd>LeetCodeList<CR>", { noremap = true, silent = true, desc = "LeetCode List" })
-vim.keymap.set("n", "<leader>Lt", "<cmd>LeetCodeTest<CR>", { noremap = true, silent = true, desc = "LeetCode Test" })
-vim.keymap.set(
-  "n",
-  "<leader>Ls",
-  "<cmd>LeetCodeSubmit<CR>",
-  { noremap = true, silent = true, desc = "LeetCode Submit" }
-)
-vim.keymap.set(
-  "n",
-  "<leader>Li",
-  "<cmd>LeetCodeSignIn<CR>",
-  { noremap = true, silent = true, desc = "LeetCode Sign in" }
-)
+vim.keymap.set("n", "<leader>oy", "<cmd>Leet reset<CR>", { noremap = true, silent = true, desc = "LeetCode Reset" })
+vim.keymap.set("n", "<leader>os", "<cmd>Leet submit<CR>", { noremap = true, silent = true, desc = "LeetCode Submit" })
+vim.keymap.set("n", "<leader>ot", "<cmd>Leet test<CR>", { noremap = true, silent = true, desc = "LeetCode Test" })
+vim.keymap.set("n", "<leader>or", "<cmd>Leet random<CR>", { noremap = true, silent = true, desc = "LeetCode Random" })
+vim.keymap.set("n", "<leader>oo", "<cmd>Leet<CR>", { noremap = true, silent = true, desc = "LeetCode Start" })
+vim.keymap.set("n", "<leader>om", "<cmd>Leet menu<CR>", { noremap = true, silent = true, desc = "LeetCode Menu" })
 
 -- Flutter
 vim.keymap.set("n", "<leader>F", "<cmd>Telescope flutter commands<CR>", { noremap = true, silent = true })
