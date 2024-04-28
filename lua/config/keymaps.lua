@@ -55,17 +55,20 @@ end
 vim.keymap.set("n", "<c-\\>", lazyterm, { noremap = true, silent = true })
 
 -- Comments
-vim.keymap.set("n", "<leader>oy", "<cmd>Leet reset<CR>", { noremap = true, silent = true, desc = "LeetCode Reset" })
-vim.keymap.set("n", "<leader>os", "<cmd>Leet submit<CR>", { noremap = true, silent = true, desc = "LeetCode Submit" })
-vim.keymap.set("n", "<leader>ot", "<cmd>Leet test<CR>", { noremap = true, silent = true, desc = "LeetCode Test" })
-vim.keymap.set("n", "<leader>or", "<cmd>Leet random<CR>", { noremap = true, silent = true, desc = "LeetCode Random" })
-vim.keymap.set("n", "<leader>oo", "<cmd>Leet<CR>", { noremap = true, silent = true, desc = "LeetCode Start" })
-vim.keymap.set("n", "<leader>om", "<cmd>Leet menu<CR>", { noremap = true, silent = true, desc = "LeetCode Menu" })
 
 -- Flutter
 vim.keymap.set("n", "<leader>F", "<cmd>Telescope flutter commands<CR>", { noremap = true, silent = true })
 
 -- LeetCode
+vim.keymap.set("n", "<leader>oo", "<cmd>Leet<CR>", { noremap = true, silent = true, desc = "LeetCode Start" })
+vim.keymap.set("n", "<leader>ol", "<cmd>Leet list<CR>", { noremap = true, silent = true, desc = "LeetCode List" })
+vim.keymap.set("n", "<leader>od", "<cmd>Leet daily<CR>", { noremap = true, silent = true, desc = "LeetCode Daily" })
+vim.keymap.set("n", "<leader>oi", "<cmd>Leet random<CR>", { noremap = true, silent = true, desc = "LeetCode Random" })
+vim.keymap.set("n", "<leader>oc", "<cmd>Leet console<CR>", { noremap = true, silent = true, desc = "LeetCode Console" })
+vim.keymap.set("n", "<leader>or", "<cmd>Leet run<CR>", { noremap = true, silent = true, desc = "LeetCode Run" })
+vim.keymap.set("n", "<leader>ot", "<cmd>Leet test<CR>", { noremap = true, silent = true, desc = "LeetCode Test" })
+vim.keymap.set("n", "<leader>ox", "<cmd>Leet reset<CR>", { noremap = true, silent = true, desc = "LeetCode Reset" })
+vim.keymap.set("n", "<leader>os", "<cmd>Leet submit<CR>", { noremap = true, silent = true, desc = "LeetCode Submit" })
 
 -- Remove keymaps
 vim.keymap.del("n", "<leader>`") -- <S-H> <S-L>
