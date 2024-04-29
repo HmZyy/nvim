@@ -47,3 +47,14 @@ cd ~/.local/share/nvim/lazy/markdown-preview.nvim/app
 npm install
 ```
 
+### image.nvim (for LeetCode.nvim)
+```
+# Ubuntu:
+sudo apt install libmagickwand-dev 
+sudo apt install luarocks 
+luarocks install magick
+
+# Arch:
+sudo pacman -Syy imagemagick
+```
+
