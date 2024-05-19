@@ -1,3 +1,7 @@
+if true then
+  return {}
+end
+
 local function tabnine_build_path()
   if vim.loop.os_uname().sysname == "Windows_NT" then
     return "pwsh.exe -file .\\dl_binaries.ps1"
