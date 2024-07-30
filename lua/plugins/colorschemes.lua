@@ -8,6 +8,10 @@ return {
     name = "catppuccin",
   },
   {
+    "scottmckendry/cyberdream.nvim",
+    name = "cyberdream",
+  },
+  {
     "folke/tokyonight.nvim",
     opts = {
       -- transparent = true,
@@ -22,7 +26,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "cyberdream",
     },
   },
 }
