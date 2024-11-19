@@ -9,7 +9,7 @@ return {
       provider = "openai",
       openai = {
         endpoint = "http://localhost:1234/v1",
-        model = "qwen2.5-coder-3b-instruct",
+        model = "qwen2.5-coder-14b-instruct",
       },
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
