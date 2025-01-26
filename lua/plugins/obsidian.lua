@@ -6,6 +6,7 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
+  build = "mkdir -p ~/vaults/personal && mkdir -p ~/vaults/work",
   opts = {
     workspaces = {
       {
