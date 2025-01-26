@@ -16,7 +16,9 @@ A NeoVim config based on [LazyVim](https://github.com/LazyVim/LazyVim)
   - [iterm2](https://iterm2.com/) **_(Macos)_**
 
 ## Installation
+
 - Make a backup of your current Neovim files:
+
   ```sh
   # required
   mv ~/.config/nvim ~/.config/nvim.bak
@@ -28,6 +30,7 @@ A NeoVim config based on [LazyVim](https://github.com/LazyVim/LazyVim)
   ```
 
 - Clone the repo
+
   ```sh
   git clone https://github.com/HmZyy/nvim ~/.config/nvim
   ```
@@ -40,21 +43,14 @@ A NeoVim config based on [LazyVim](https://github.com/LazyVim/LazyVim)
 
 ## Plugins Configuration
 
-### Markdown-Preview
-TODO: add this in plugin setup lua/plugins/markdown-preview.lua
-```sh 
-cd ~/.local/share/nvim/lazy/markdown-preview.nvim/app
-npm install
-```
-
 ### image.nvim (for LeetCode.nvim)
+
 ```
 # Ubuntu:
-sudo apt install libmagickwand-dev 
-sudo apt install luarocks 
+sudo apt install libmagickwand-dev
+sudo apt install luarocks
 luarocks install magick
 
 # Arch:
 sudo pacman -Syy imagemagick
 ```
-
