@@ -36,7 +36,7 @@ vim.keymap.set("n", "<leader>ww", "<C-W>c", { desc = "Delete Window" })
 vim.keymap.set(
   "n",
   "<leader>h",
-  "<cmd>ClangdSwitchSourceHeader<CR>",
+  "<cmd>LspClangdSwitchSourceHeader<CR>",
   { noremap = true, silent = true, desc = "Switch Source/Header" }
 )
 

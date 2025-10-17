@@ -9,6 +9,6 @@ return {
       return {}
     end,
   },
-  { "echasnovski/mini.bufremove", version = false },
+  { "nvim-mini/mini.bufremove", version = false },
   { "dstein64/nvim-scrollview" },
 }
