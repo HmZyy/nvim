@@ -18,6 +18,9 @@ return {
           wo = { wrap = true }, -- Wrap notifications
         },
       },
+      scroll = {
+        enabled = false, -- Disable scrolling animations
+      },
     },
     keys = {
       {
