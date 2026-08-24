@@ -22,11 +22,7 @@ return {
     },
   },
 
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
-    },
-  },
+  -- colorscheme is controlled by lua/plugins/theme.lua (symlinked to Omarchy's
+  -- current system theme) plus lua/plugins/all-themes.lua and
+  -- omarchy-theme-hotreload.lua for live switching
 }
